@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:url" content="kanakanho.github.io/ar_quick_look/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="AR Quick Look Test" />
-        <meta property="og:description" content="AR Quick Look Test" />
-        <meta property="og:image" content="usdz/bridge.png" />
-        <title>AR Quick Look Test</title>
-    </head>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-        }
-        a {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
-    <body>
-        <!-- <a href="usdz/bridge.usdz" rel="ar">
-            <img src="usdz/bridge.png" alt="bridge" />
-        </a> -->
-        <a href="usdz/新学生部屋.usdz" rel="ar">
-            <img src="usdz/新学生部屋.png" alt="新学生部屋" />
-        </a>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="kanakanho.github.io/ar_quick_look/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AR Quick Look Test" />
+    <meta property="og:description" content="AR Quick Look Test" />
+    <meta property="og:image" content="usdz/bridge.png" />
+    <title>AR Quick Look Test</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+    model {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <model environmentmap="usdz/ql_1k.hdr" stagemode="orbit">
+      <source src="usdz/新学生部屋.usdz" type="model/vnd.usdz+zip" />
+      <a href="usdz/新学生部屋.usdz" rel="ar">
+        <img src="usdz/新学生部屋.png" alt="新学生部屋" />
+      </a>
+      <!-- <source src="usdz/bridge.usdz" type="model/vnd.usdz+zip" />
+      <a href="usdz/bridge.usdz" rel="ar">
+        <img src="usdz/bridge.png" alt="bridge" /> -->
+      <!-- <source src="usdz/Scene.usdz" type="model/vnd.usdz+zip" />
+      <a href="usdz/Scene.usdz" rel="ar">
+        <img src="usdz/新学生部屋.png" alt="Scene" />
+      </a> -->
+    </model>
+  </body>
 </html>
