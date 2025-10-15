@@ -1,7 +1,4 @@
-import basicSsl from '@vitejs/plugin-basic-ssl'
-
 export default {
-  plugins: [
-    basicSsl()
-  ]
-}
+  plugins: [],
+  base: process.env.GITHUB_PAGES ? "ar_quick_look" : "./",
+};

@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      '@vitejs/plugin-basic-ssl':
-        specifier: ^2.1.0
-        version: 2.1.0(vite@7.1.10)
       vite:
         specifier: ^7.1.7
         version: 7.1.10
@@ -286,12 +283,6 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@vitejs/plugin-basic-ssl@2.1.0':
-    resolution: {integrity: sha512-dOxxrhgyDIEUADhb/8OlV9JIqYLgos03YorAueTIeOUskLJSEsfwCByjbu98ctXitUN3znXKp0bYD/WHSudCeA==}
-    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
-    peerDependencies:
-      vite: ^6.0.0 || ^7.0.0
-
   esbuild@0.25.11:
     resolution: {integrity: sha512-KohQwyzrKTQmhXDW1PjCv3Tyspn9n5GcY2RTDqeORIdIJY8yKIF7sTSopFmn/wpMPW4rdPXI0UE5LJLuq3bx0Q==}
     engines: {node: '>=18'}
@@ -527,10 +518,6 @@ snapshots:
     optional: true
 
   '@types/estree@1.0.8': {}
-
-  '@vitejs/plugin-basic-ssl@2.1.0(vite@7.1.10)':
-    dependencies:
-      vite: 7.1.10
 
   esbuild@0.25.11:
     optionalDependencies:
